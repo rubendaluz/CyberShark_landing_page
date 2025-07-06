@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #0a192f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background-color: #0a192f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #00bcd4;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 30px;
+  background-color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #0a192f;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.feature i {
+  font-size: 1.8em;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.section-alt {
+  background-color: #e3f2f9;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.benefits-list li {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+.benefits-list i {
+  color: #00bcd4;
+  margin-right: 10px;
+}
+
+.cta-section {
+  padding: 50px 30px;
+  background-color: #0a192f;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #0a192f;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer p, footer h3 {
+  margin: 5px 0;
+}
