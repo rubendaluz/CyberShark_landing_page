@@ -6,29 +6,40 @@
   <meta name="description" content="Cyber Shark - Cibersegurança com Inteligência Artificial">
   <title>Cyber Shark</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="compatibilidade.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="main.js" defer></script>
+  <!-- <script src="translate.js"></script> -->
 </head>
 <body>
-  <header class="navbar">
+   <header class="navbar">
+  <div class="navbar-left">
     <div class="logo">
-      <img src="img/logo.png" alt="Cyber Shark Logo" />
+      <img src="img/logo.png" alt="Logo" />
       <span>Cyber Shark</span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#software">Software</a></li>
-        <li><a href="#planos">Pacotes</a></li>
-        <li><a href="#cta">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="navbar-menu">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Planos</a></li>
+      <li><a href="#">Contactos</a></li>
+    </ul>
+  </nav>
+</header>
 
   <section class="hero">
     <div class="hero-text">
       <h1>Cibersegurança Inteligente e Automatizada</h1>
-      <p>A segurança evoluiu: os teus ativos estão protegidos por sistemas que pensam, aprendem e reagem com inteligência artificial</p>
+      <p>A segurança evoluiu: os teus ativos devem ser protegidos por sistemas que pensam, aprendem e reagem com inteligência artificial</p>
       <a href="#cta" class="btn-primary">Agendar Demonstração</a>
     </div>
     <!-- <div class="hero-img">
@@ -65,6 +76,9 @@
 
   <section id="software" class="section section-alt">
     <h2>Plataforma Cyber Shark</h2>
+    <p class="software-intro">
+      A Cyber Shark é uma solução IDS/IPS inteligente com módulos integrados para deteção, análise e resposta automatizada a ameaças em tempo real.
+    </p>    
     <div class="features-grid">
       <div class="feature">
         <i class="fa-solid fa-bug-slash"></i>

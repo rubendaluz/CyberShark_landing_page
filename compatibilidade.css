@@ -1,0 +1,105 @@
+/* RESPONSIVO PARA TELEMÓVEIS E TABLETS */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    display: none;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  .benefits-list {
+    padding: 0 10px;
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .pricing-card {
+    max-width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  #navbar-menu {
+    display: none;
+    width: 100%;
+  }
+
+  #navbar-menu.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  #navbar-menu ul {
+    flex-direction: column;
+    background-color: #031529;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbar-menu ul li {
+    border-top: 1px solid #0a192f;
+    width: 100%;
+  }
+
+  #navbar-menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  /* Ajusta alinhamento geral */
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+}

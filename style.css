@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -10,63 +16,80 @@ a {
   color: inherit;
 }
 
+/* GERAL */
 .navbar {
-  background-color: #0a192f;
+  background-color: #031529;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
-.logo img {
-  height: 60px;
-  margin-right: 10px;
-}
-
+/* Agrupa logo e texto */
 .logo {
   display: flex;
   align-items: center;
   color: #00bcd4;
   font-size: 1.5em;
   font-weight: bold;
+  gap: 10px;
 }
 
-nav ul {
+.logo img {
+  height: 50px;
+}
+
+/* HAMBURGUER – escondido no desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 28px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animação X */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* NAV MENU PADRÃO */
+#navbar-menu {
+  display: flex;
+}
+
+#navbar-menu ul {
   display: flex;
   gap: 20px;
-  list-style: none;
 }
 
-nav ul li a {
+#navbar-menu ul li a {
   color: #fff;
+  text-decoration: none;
   font-weight: 500;
-  position: relative;
-  transition: all 0.3s ease;
-  display: inline-block;
+  padding: 10px;
 }
-
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #00bcd4;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-nav ul li a:hover {
-  transform: scale(1.2);
-}
-
 
 .hero {
   display: flex;
@@ -197,13 +220,23 @@ nav ul li a:hover {
 
 .cta-section {
   padding: 50px 30px;
-  background-color: #0a192f;
+  background-color: #031529;
   color: white;
   text-align: center;
 }
 
+.software-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 footer {
-  background-color: #0a192f;
+  background-color: #031529;
   color: white;
   padding: 30px;
   display: flex;
